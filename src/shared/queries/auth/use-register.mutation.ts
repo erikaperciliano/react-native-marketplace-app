@@ -4,7 +4,7 @@ import * as authService from '../../services/auth.service'
 
 export const useRegisterMutation = () => {
     const mutation = useMutation({
-        mutationFn: (userDate: RegisterHttpParams) => authService.register(userDate),
+        mutationFn: (userData: RegisterHttpParams) => authService.register(userData),
         onSuccess: (response) => {
             console.log(response)
         },
