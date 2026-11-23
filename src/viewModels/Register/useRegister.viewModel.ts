@@ -13,7 +13,7 @@ export const useRegisterViewModel = () => {
         defaultValues: {
             phone: '22222222222',
             confirmPassword: '12345678',
-            email: 'teste3@gmail.com',
+            email: 'teste3teste@gmail.com',
             name: 'teste3',
             password: '12345678',
         }
