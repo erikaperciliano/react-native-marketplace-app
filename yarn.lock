@@ -970,6 +970,11 @@
   resolved "https://registry.yarnpkg.com/@expo/sudo-prompt/-/sudo-prompt-9.3.2.tgz#0fd2813402a42988e49145cab220e25bea74b308"
   integrity sha512-HHQigo3rQWKMDzYDLkubN5WQOYXJJE2eNqIQC2axC2iO3mHdwnIR7FgZVvHWtBwAdzBgAP0ECp8KqS8TiMKvgw==
 
+"@expo/vector-icons@^15.0.2":
+  version "15.1.1"
+  resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-15.1.1.tgz#4b1d2c60493c0b0536972f0a5babd5f5c85b48f4"
+  integrity sha512-Iu2VkcoI5vygbtYngm7jb4ifxElNVXQYdDrYkT7UCEIiKLeWnQY0wf2ZhHZ+Wro6Sc5TaumpKUOqDRpLi5rkvw==
+
 "@expo/ws-tunnel@^2.0.1":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@expo/ws-tunnel/-/ws-tunnel-2.0.1.tgz#d5eb8ecd186c89a13714e048e3f9bd2c0ae7538b"
@@ -4980,6 +4985,16 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
+
+tailwind-merge@^3.7.1:
+  version "3.7.1"
+  resolved "https://registry.yarnpkg.com/tailwind-merge/-/tailwind-merge-3.7.1.tgz#9991f80b90d80306ca17ff89eb655b8e773192e2"
+  integrity sha512-v7y4BV4FUlO8exj/4M5UXKeoowDiuugVUg3tkMNIyOUCOHy5xp8+5aWQeXCtZ2491sUV1YPsVeM9EveZ6/xuZQ==
+
+tailwind-variants@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/tailwind-variants/-/tailwind-variants-4.0.2.tgz#9a4727424be08f2f553cc2fc537382ba7fc5eb98"
+  integrity sha512-sZvOFkfe5LlYG/crRX5IvP3oUHmJPu+7WmrLQFvF0kCRq51C+lurlzFMm/jURG/5keT7VOJ/it0N3jkzYux85w==
 
 tailwindcss@^3.4.17:
   version "3.4.19"
