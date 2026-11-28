@@ -93,6 +93,14 @@ export const AppInput: FC<AppInputProps> = ({
                 </TouchableOpacity>
             </Pressable>
 
+            {
+                error && (
+                    <Text className={styles.error()}>
+                        <Ionicons name='alert-circle-outline' /> {error}
+                    </Text>
+                )
+            }
+
         </View>
     )
 }
