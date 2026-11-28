@@ -15,7 +15,11 @@ export const RegisterView: FC<ReturnType<typeof useRegisterViewModel>> = ({ onSu
                 onChangeText={setEmail}
                 error='E-mail inválido'
             />
-            <AppInput label='Senha' leftIcon='lock-closed-outline' />
+            <AppInput
+                label='Senha'
+                leftIcon='lock-closed-outline'
+                secureTextEntry={true}
+            />
             <TouchableOpacity  onPress={() => onSubmit()}>
                 <Text>Registrar</Text>
             </TouchableOpacity>
