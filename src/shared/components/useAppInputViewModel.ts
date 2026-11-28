@@ -40,11 +40,14 @@ export const useAppInputViewModel = ({
     }
 
     const handleFocus = (event: FocusEvent) => { 
+        console.log('Focou no input')
         setIsFocused(true)
         onFocus?.(event)
     }
 
     const handleBlur = (event: BlurEvent) => { 
+        console.log('Desfocou do input')
+
         setIsFocused(false)
         onBlur?.(event)
     }
@@ -57,6 +60,14 @@ export const useAppInputViewModel = ({
         return colors.gray[200]
     }
 
+    const handleTextChange = (text: string) => { 
+        if (mask) {
+            onChangeText?.(mask(text) || '')
+        } else { 
+            onChangeText?.(text)
+        }
+    }
+
 
     return {
         getIconColor,
@@ -65,6 +76,7 @@ export const useAppInputViewModel = ({
         handleWrapperPress,
         handlePasswordToggle,
         showPassword,
-        mask,
+        handleTextChange,
+        isFocused,
     }
 }
