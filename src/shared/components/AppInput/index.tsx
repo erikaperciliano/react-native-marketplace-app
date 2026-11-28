@@ -68,12 +68,23 @@ export const AppInput: FC<AppInputProps> = ({
         <View className={styles.container({ className: containerClassName })}>
             <Text className={styles.label()}>{label}</Text>
             <Pressable className={styles.wrapper()}>
-                <Ionicons className='mr-3' size={22} name='person' />
+                { 
+                    leftIcon && (
+                        <Ionicons
+                            color={getIconColor()}
+                            className='mr-3'
+                            size={22}
+                            name={leftIcon}
+                        />
+                    )
+                }
 
                 <TextInput
                     onBlur={handleBlur}
                     onFocus={handleFocus}
+                    onChangeText={handleTextChange}
                     className={styles.input()}
+                    value={value}
                     {...textInputProps}
                 />
 
